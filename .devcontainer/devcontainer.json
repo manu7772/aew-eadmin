@@ -1,0 +1,24 @@
+{
+    "name": "PHP Aequation bundles",
+    "dockerComposeFile": "compose.yml",
+    "service": "dev",
+    "workspaceFolder": "/bundle",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "EditorConfig.EditorConfig",
+                "bmewburn.vscode-intelephense-client",
+                "xdebug.php-debug",
+                "yoanbernabeu.yoandevpack",
+                "moetelo.twiggy",
+                "mblode.twig-language-2",
+                "nadim-vscode.twig-code-snippets",
+                "nadim-vscode.symfony-code-snippets",
+                "bradlc.vscode-tailwindcss",
+                "mehedidracula.php-namespace-resolver",
+                "zobo.php-intellisense"
+            ]
+        }
+    }
+}

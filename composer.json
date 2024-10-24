@@ -1,0 +1,77 @@
+{
+    "name": "aequation/eadmin",
+    "type": "symfony-bundle",
+    "description": "This bundle is an EasyAdmin extension for my projects.",
+    "keywords": [ "symfony","symfony-bundle" ],
+    "homepage": "https://www.aequation.fr",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emmanuel Dujardin / Aequation",
+            "homepage": "https://github.com/manu7772"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Aequation\\EadminBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aequation\\EadminBundle\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/config": "7.1.*",
+        "symfony/dependency-injection": "^7.1",
+        "symfony/http-kernel": "^7.1",
+        "symfony/flex": "^2.4",
+        "liip/imagine-bundle": "^2.13",
+        "vich/uploader-bundle": "^2.4",
+        "easycorp/easyadmin-bundle": "^4.13",
+        "aequation/wire": "dev-main"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../../bundles/aequation/*",
+            "options": {
+                "symlink": true,
+                "versions": {
+                    "aequation/*": "dev-main"
+                }
+            },
+            "canonical": false,
+            "only": ["aequation/*"],
+            "fallback": true
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        }
+    ],
+    "require-dev": {
+        "symfony/framework-bundle": "7.1.*",
+        "symfony/phpunit-bridge": "7.1.*",
+        "symfony/twig-bundle": "7.1.*",
+        "symfony/var-dumper": "7.1.*",
+        "symfony/maker-bundle": "^1.61"
+    },
+    "conflict": {
+        "symfony/flex": "<1.13"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": false,
+            "symfony/runtime": false
+        }
+    },
+    "extra": {
+        "thanks": {
+            "name": "symfony/ux",
+            "url": "https://github.com/symfony/ux"
+        }
+    },
+    "minimum-stability": "dev"
+}

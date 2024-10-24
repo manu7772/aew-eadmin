@@ -1,0 +1,9 @@
+services:
+    dev:
+        container_name: php_bundles
+        build:
+            context: ./php
+        command: sleep infinity
+        volumes:
+            - ../.:/bundle
+
