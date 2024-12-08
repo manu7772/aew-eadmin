@@ -23,9 +23,9 @@
     },
     "require": {
         "php": ">=8.3",
-        "symfony/config": "7.1.*",
-        "symfony/dependency-injection": "^7.1",
-        "symfony/http-kernel": "^7.1",
+        "symfony/config": "7.2.*",
+        "symfony/dependency-injection": "^7.2",
+        "symfony/http-kernel": "^7.2",
         "symfony/flex": "^2.4",
         "liip/imagine-bundle": "^2.13",
         "vich/uploader-bundle": "^2.4",
@@ -33,6 +33,10 @@
         "aequation/wire": "dev-main"
     },
     "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
         {
             "type": "path",
             "url": "../../../bundles/aequation/*",
@@ -45,17 +49,13 @@
             "canonical": false,
             "only": ["aequation/*"],
             "fallback": true
-        },
-        {
-            "type": "composer",
-            "url": "https://packagist.org"
         }
     ],
     "require-dev": {
-        "symfony/framework-bundle": "7.1.*",
-        "symfony/phpunit-bridge": "7.1.*",
-        "symfony/twig-bundle": "7.1.*",
-        "symfony/var-dumper": "7.1.*",
+        "symfony/framework-bundle": "7.2.*",
+        "symfony/phpunit-bridge": "7.2.*",
+        "symfony/twig-bundle": "7.2.*",
+        "symfony/var-dumper": "7.2.*",
         "symfony/maker-bundle": "^1.61"
     },
     "conflict": {
@@ -73,5 +73,5 @@
             "url": "https://github.com/symfony/ux"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
